@@ -7,6 +7,22 @@
   "types": "lib/typescript/index.d.ts",
   "react-native": "src/index",
   "source": "src/index",
+  "exports": {
+    "./native": {
+      "import": "./lib/module/native/index",
+      "require": "./lib/commonjs/native/index",
+      "types": "./lib/typescript/native/index.d.ts"
+    },
+    "./web": {
+      "import": "./lib/module/web/index",
+      "require": "./lib/commonjs/web/index",
+      "types": "./lib/typescript/web/index.d.ts"
+    },
+    "./plugin": {
+      "import": "./plugin",
+      "require": "./plugin"
+    }
+  },
   "files": [
     "src",
     "lib",
